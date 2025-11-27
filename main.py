@@ -67,7 +67,7 @@ def processCommand(c):
         webbrowser.open(link)
 
     elif "news" in c.lower():
-        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey=d7e5a0a1cd194360a3f1ad6da3a6cbe3")
+        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_NEWS_API_KEY")
         if r.status_code == 200:
             # Parse the JSON response
             data = r.json()
